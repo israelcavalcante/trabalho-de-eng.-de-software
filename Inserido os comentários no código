@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <locale.h>
+
+float a, b, x1, x2;   //declaração das variaveis
+
+float eixo){
+               return -b/a;         //Função para calcular o valor do eixo x.
+}
+float eixoF(){
+               return b;            //Função para calcular o valor do eixo y.
+}
+
+main(){
+
+setlocale(LC_ALL,"");    // Habilita o teclado ABNT2
+
+printf ("TRABALHO DE ENGENHARIA \nCODIGO PARA RESOLVER UMA FUNÇAO DE PRIMEIRO GRAU/n/n"); // Titulo do trabalho e o que o código faz
+
+printf("insira o valor de A:\n");               // Recebe os Dados da variavel A
+
+scanf("%f",&a);                                // Ler os dados recebido da variavel A
+
+printf("insira o valor de B:\n");             //  Recebe os Dados da variavel B
+
+scanf("%f",&b);                              // Ler os dados recebido da variavel B
+
+printf("Eixo X  : %0.2f",eixo));          // Mostra os dados do Eixo X na tela
+
+printf("Eixo f(x)  : %0.2f",eixoF);        //  Mostra os dados do Eixo X na tela
+
+getch();
+
+}
